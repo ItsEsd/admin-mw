@@ -888,3 +888,6 @@ button:disabled{
   border-radius: 5px;
   background-color: #343434;
 }
+.introcon i{
+  margin-bottom: 10px;
+}
