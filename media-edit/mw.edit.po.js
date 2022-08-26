@@ -24,7 +24,6 @@ function LogAdmin() {
 
 function letadin(e){
 var res = e.result;
-console.log(res);
 if(res =="ID found"){
     document.getElementById("iamin").style.display = "block";
     document.getElementById("logAd").style.display = "none";
@@ -62,7 +61,6 @@ $('form[id="mwall_inmedia#1"]').submit(function() {
         k = unescape(document.getElementById("inmedia1_json").value);
         TOD = JSON.parse(k);
         $('#mwall_inmedia1').empty();
-        console.log(TOD,TOD.conTitle1);
         $('#mwall_inmedia1').show();
         document.getElementById("mwall_inmedia1").innerHTML += '<p style="color:black;">' + TOD.conTitle1 + '<a target="_blank" class="readmore" href="' + TOD.conLink1 + '">' + TOD.conSiteName1 + '</a> </p> <hr> ';
       
@@ -85,7 +83,6 @@ function update_value_inmone() {
 }
 
 function medoneup(e) {
-    console.log(e.result);
     if(e.result !='ID not found!'){
         document.getElementById("connectUpNews").style.display = "block";
         setTimeout(function() {
@@ -106,7 +103,6 @@ $('form[id="mwall_inmedia#2"]').submit(function() {
     k = unescape(document.getElementById("inmedia2_json").value);
     TOD = JSON.parse(k);
     $('#mwall_inmedia2').empty();
-    console.log(TOD,TOD.conTitle1);
     $('#mwall_inmedia2').show();
     document.getElementById("mwall_inmedia2").innerHTML += '<p style="color:black;">' + TOD.conTitle1 + '<a target="_blank" class="readmore" href="' + TOD.conLink1 + '">' + TOD.conSiteName1 + '</a> </p> <hr> ';
   
@@ -129,7 +125,6 @@ var emid = $("#em").val();
 }
 
 function medtwoup(e) {
-console.log(e.result);
 if(e.result !='ID not found!'){
     document.getElementById("connectUpNews2").style.display = "block";
     setTimeout(function() {
@@ -318,4 +313,63 @@ if(e.result != "ID not found!"){
       }, 2000);
     }
 document.getElementById("postq").disabled = true;
+}
+
+// Exam Info Update ///////////////////////////
+
+$(function() {
+  $('form[id="exinfo_edit"]').submit(function() {
+    document.getElementById("exinfo_json").value = escape(JSON.stringify($('form[id="exinfo_edit"]').serializeObject()));
+    document.getElementById("exinfo_json_unesc").value = JSON.stringify($('form[id="exinfo_edit"]').serializeObject());
+    document.getElementById("preexinfo").disabled = false;
+    document.getElementById("postexin").disabled = false;
+    return false;
+  });
+});
+
+document.getElementById("preexinfo").addEventListener("click", previewExinfo);
+
+function previewExinfo() {
+    var Exin, a;
+    a = unescape(document.getElementById("exinfo_json").value);
+    Exin = JSON.parse(a);
+    $('#preview_exinfo').empty();
+    document.getElementById("preview_exinfo").innerHTML += '<div class="eninpresec"><p>' + Exin.exminfo + '</p></div>';
+}
+
+
+document.getElementById("postexin").
+addEventListener("click", update_value_exin);
+
+function update_value_exin() {
+  $("ExamInfoNt").empty();
+  var upqs = $("#exinfo_json").val();
+  var idpmv = $("#idop").val();
+  var emid = $("#em").val();
+  if (upqs != 0) {
+    document.getElementById("postexin").disabled = true;
+    var url = r1+rsign + 
+    "?callback=medupexin&idop=" +
+     idpmv + "&emop=" + 
+     emid + "&inex=" + 
+     upqs + "&action=medexiadd";
+    var request = jQuery.ajax({
+      crossDomain: true,
+      url: url,
+      method: "GET",
+      dataType: "jsonp"
+    });
+    } else {
+    return false;
+    }
+}
+
+function medupexin(e){
+if(e.result != "ID not found!"){
+    document.getElementById("ExamInfoNt").style.display = "block";
+    setTimeout(function() {
+        $('#ExamInfoNt').fadeOut('fast');
+      }, 2000);
+    }
+document.getElementById("postexin").disabled = true;
 }
