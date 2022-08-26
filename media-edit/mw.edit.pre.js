@@ -1,9 +1,9 @@
 // /////////////////////
 
 var r1= "https://script.google.com/macros/s/";
-var rsign ="AKfycbw_eFwIQBrL_iROgSRuNxGLf5SQByAqRE8_beLh9kXWWO2ZyLCltmZgTqSpoknVUIR1/exec"
+var rsign ="AKfycbw_eFwIQBrL_iROgSRuNxGLf5SQByAqRE8_beLh9kXWWO2ZyLCltmZgTqSpoknVUIR1/exec";
 var rB = "https://script.google.com/macros/s/";
-var rShow = "AKfycbz9XUzdTUILZDwU_hy1_JdRyjvA7zgLYZl1smOuUw4WmwDL9BOrkLnIQqn5XybdGEpm/exec"
+var rShow = "AKfycbz9XUzdTUILZDwU_hy1_JdRyjvA7zgLYZl1smOuUw4WmwDL9BOrkLnIQqn5XybdGEpm/exec";
 function read_tm() {
   $('#inm1,#inm2,#vid,#dquote,#exinfos').empty();
   document.getElementById("showhtml").style.display = "block";
