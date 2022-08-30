@@ -277,14 +277,7 @@ body {
     width:200px;
 
   }
-  #inmediaShow {
-    border: none;
-    padding: 6px 55px;
-    border-radius: 4px;
-    background-color: #0c29cd;
-    color: white;
-    font-size: 20px; 
-  }
+ 
   .form-control:focus {
     box-shadow: none;
     border: 1px solid grey;
@@ -601,3 +594,16 @@ margin-top:20%;
 #divsecdl button{
   padding:6px 40px;
 }
+
+#shhtmledit{
+  border: none;
+  padding: 6px 40px;
+  border-radius: 4px;
+  background-color: #0c29cd;
+  color: white;
+  font-size: 20px;
+  bottom:20px;
+  right:20px;
+  position: fixed;
+}
+
