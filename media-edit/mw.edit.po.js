@@ -140,7 +140,7 @@ if(e.result !='ID not found!'){
 // Med Video Update ////////////////////////////
 
 $(document).ready(function() {
-    var max_vids = 40;
+    var max_vids = 6;
     var wrapper = $(".vid_wrap");
     var add_button = $(".addVid");
     var x = 1;
@@ -181,7 +181,7 @@ function getId(url) {
 $(function() {
     $('form[id="mwallinmediavid"]').submit(function() {
       document.getElementById("frameVid_json").value = JSON.stringify($('form[id="mwallinmediavid"]').serializeObject());
-      document.getElementById("postv").disabled = false;
+      document.getElementById("previd").disabled = false;
       return false;
     });
   });
@@ -206,14 +206,6 @@ function previewVid() {
     }
   }
 }
-
-  $(function() {
-    $('form[id="mwallinmediavid"]').submit(function() {
-      document.getElementById("frameVid_json").value = JSON.stringify($('form[id="mwallinmediavid"]').serializeObject());
-      document.getElementById("postv").disabled = false;
-      return false;
-    });
-  });
 
 
 document.getElementById("postv").addEventListener("click", update_value_youv);
