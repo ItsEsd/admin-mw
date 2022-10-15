@@ -889,14 +889,11 @@ button:disabled{
 .introcon i{
   margin-bottom: 10px;
 }
-.newex-p1{
-  padding:10px;
-  text-align: center;
-}
+
 .newex-p1 img{
   width:100%;
-  max-width:140px;
-  height:120px;
+  max-width:160px;
+  height:140px;
   padding:10px;
   background-color: rgba(253, 253, 253, 0.178);
 }
