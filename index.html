@@ -81,28 +81,44 @@
                     <li class="icon fa fa-user"><span class="title">Admin</span>
                     <div class="container">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                           <div class="left-text">
-                            <h4>TeleMedia Edit</h4>
+                            <h4 style="font-size:24px;">TeleMedia Edit</h4>
                             <p class="newex-p1"><img src="img/media-edit.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="media-edit/">Continue</a>
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                           <div class="left-text">
-                            <h4>Admin Tools</h4>
+                            <h4 style="font-size:24px;">Admin Tools</h4>
                             <p class="newex-p1"><img src="img/admin-tools.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="admin-tools/">Continue</a>
                               </div>
                           </div>
                         </div>
+                      <div class="col-md-4">
+                        <button class="prtlcordibtn"><i class="fa fa-users"></i><br><hr> Portal Coordinator</button></div>
+                       </div>
                       </div>
-                      <h6><br><br>N.B. Site Under Development</h6><br>
-                    </div>
+                      <!-- Coordinator Div -->
+                  <div id="prtldivsec">
+                    <form id="prtlcordiin">
+                        <div>
+                          <label>Portal ID:</label><br>
+                          <input type="text" id="prtlid" class="form-control" required><br>
+                          <label>Pass:</label><br>
+                          <input type="password" id="prtlpass" class="form-control" required><br>
+                          <input type="submit" class="frmctrl"value="Go >>" id="subprtl">
+                          <input class="frmctrl" type="button" value="Close" id="clsprtlsign">
+                        </div>
+                      </form>
+                  </div>
+                <!-- Div End -->
                     </li>
+                
                   </div>  
                   <div class="page" id="p3">
                     <li class="icon fa fa-handshake-o"><span class="title">Career</span>
@@ -236,6 +252,7 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/con-as.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
