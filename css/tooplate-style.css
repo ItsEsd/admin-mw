@@ -921,7 +921,7 @@ button:disabled{
   font-size: 100px;
 }
 #prtldivsec{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-size: 14px;
   bottom:40px;
   left:0px;
