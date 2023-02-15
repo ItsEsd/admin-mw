@@ -229,3 +229,6 @@ body {
   .modal-dialog {
     margin-top: 100px;
   }
+  #sourceText{
+    min-height:350px;
+  }
