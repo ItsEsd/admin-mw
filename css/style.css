@@ -1,0 +1,49 @@
+.containerpc {
+    top:0;
+    left:0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color:black;
+  }
+  
+  .itempc {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .contentpc {
+    display: none;
+    padding: 10px;
+    width:100%;
+  }
+  
+  .activepc {
+    display: block;
+  }
+  
+  .buttonpc {
+    padding: 5px;
+    cursor: pointer;
+    color:black;
+  }
+  
+  .close-buttonpc {
+    top: 20px;
+    right: 160px;
+    position: absolute;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    z-index: 1000000;
+    border: 1px solid grey;
+    outline: none;
+  }
+  .close-buttonpc:active,.close-buttonpc:focus,.close-buttonpc:hover{
+    outline: none;
+    background: #e1e1e1;
+  }
