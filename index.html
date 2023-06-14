@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/tooplate-style.css">
-
+        <link rel="stylesheet" href="/css/style.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -85,7 +85,7 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="left-text">
-                            <h4 style="font-size:24px;">TeleMedia Edit</h4>
+                            <h4 style="font-size:20px;">TeleMedia Edit</h4>
                             <p class="newex-p1"><img src="img/media-edit.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="media-edit/">Continue</a>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="left-text">
-                            <h4 style="font-size:24px;">Admin Tools</h4>
+                            <h4 style="font-size:20px;">Admin Tools</h4>
                             <p class="newex-p1"><img src="img/admin-tools.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="admin-tools/">Continue</a>
@@ -105,9 +105,14 @@
                         <button class="prtlcordibtn"><i class="fa fa-users"></i><br><hr> Portal Coordinator</button></div>
                        </div>
                       </div>
-                      <!-- Coordinator Div -->
-                  <div id="prtldivsec">
-                    <form id="prtlcordiin">
+               <!-- Coordinator Div -->
+               <div id="prtldivsec">
+                <div class="containerpc">
+                  <div class="itempc">
+                    Referrer
+                    <span class="buttonpc">▲</span>
+                    <div class="contentpc activepc">
+                      <form id="prtlcordiin" autocomplete="off">
                         <div>
                           <label>ID:</label><br>
                           <input type="text" id="prtlid" class="form-control" required><br>
@@ -117,10 +122,36 @@
                           <input class="frmctrl" type="button" value="Close" id="clsprtlsign">
                         </div>
                       </form>
+                    </div>
                   </div>
-                <!-- Div End -->
+                  <div class="itempc">
+                    Coordinator
+                    <span class="buttonpc">▲</span>
+                    <div class="contentpc activepc">
+                      <div class="itempc">
+                        Service Portal
+                        <span class="buttonpc">▼</span>
+                        <div class="contentpc">
+                          <!-- Content for Service Portal item goes here -->
+                          Under Development
+                        </div>
+                      </div>
+                      <div class="itempc">
+                        Exam Portal
+                        <span class="buttonpc">▼</span>
+                        <div class="contentpc">
+                          <!-- Content for Exam Portal item goes here -->
+                          Under Development
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div style="text-align: right;width:90%;padding:10px;color:blue;background-color: rgb(228, 228, 228);"><a target="_blank" href="//astro.mastrowall.in">Be a part of the fun!</a></div>
+                <button class="close-buttonpc">Close</button>
+              </div></div>
+            <!-- Div End -->
                     </li>
-                
+                       
                   </div>  
                   <div class="page" id="p3">
                     <li class="icon fa fa-handshake-o"><span class="title">Career</span>
@@ -163,19 +194,17 @@
                           </div>
                           <!-- LightBox -->
                           <div class="col-md-6">
-                            <h6 style="background-color: rgba(250, 235, 215, 0.479);padding:4px;">Life at MASTROWALL</h6>
+                            <h6 style="background-color: #faebd77a;padding:4px;">Life at MASTROWALL</h6>
                             <div id="galleryCon">
                             <div class="project-item">
-                              <a href="img/item-01.jpg" data-lightbox="image-1"><img src="img/thumb-01.jpg"></a>
+                              <a href="img/item-01.jpg" data-lightbox="image-1"><img src="/img/no-con-img.png"></a>
                             </div>
                             <div class="project-item">
-                              <a href="img/item-02.jpg" data-lightbox="image-1"><img src="img/thumb-02.jpg"></a>
-                            </div>
-                            <div class="project-item">
-                              <a href="img/item-03.jpg" data-lightbox="image-1"><img src="img/thumb-03.jpg"></a>
-                            </div>
-                            <div class="project-item">
-                              <a href="img/item-03.jpg" data-lightbox="image-1"><img src="img/thumb-03.jpg"></a>
+                              <a href="img/item-01.jpg" data-lightbox="image-1"><img src="/img/no-con-img.png"></a>
+                            </div> <div class="project-item">
+                              <a href="img/item-01.jpg" data-lightbox="image-1"><img src="/img/no-con-img.png"></a>
+                            </div> <div class="project-item">
+                              <a href="img/item-01.jpg" data-lightbox="image-1"><img src="/img/no-con-img.png"></a>
                             </div>
                             
                            </div>
@@ -219,7 +248,7 @@
                          </div>
                          <div class="col-md-6">
                            <div class="right-info">
-                              <p><b>What Does Bug Fix Mean?</b><br><em>A bug fix is a change to a system or product designed to handle a programming bug/glitch. Many different types of programming bugs that create errors with system implementation may 
+                              <p><font size="4">What Does Bug Fix Mean?</font><br><br><em>A bug fix is a change to a system or product designed to handle a programming bug/glitch. Many different types of programming bugs that create errors with system implementation may 
                                 require specific bug fixes that are successfully resolved by a development or other IT team.</em><br><br>
                                 <em>A bug fix is also known as a program temporary fix (PTF).</em><br><br><em>Bug fixes also may be used in specific company protocols for identifying and fixing bugs.
                                   One of the most common applications of bug fixes is a technical protocol that is used to identify various types of bugs, so they may be effectively resolved. The type of system used in many organizations is known as an "open ticket" system, 
@@ -255,15 +284,5 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/con-as.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>
