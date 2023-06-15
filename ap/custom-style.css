@@ -1,0 +1,24 @@
+
+.modal-body{
+    margin-top:0px;
+    padding-top:0px;
+    height: 500px;
+    overflow-y: auto;
+}
+body{
+    background: #a806df81;
+}
+#applicationForm{
+padding:0px;
+}
+#applicationForm label{
+    margin-bottom:5px;
+}
+#applicationForm .form-group{
+margin-top:10px;
+margin-bottom:10px;
+}
+#submitBtn{
+    margin-top:10px;
+    width:100%;
+}
