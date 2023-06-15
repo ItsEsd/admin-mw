@@ -1,12 +1,12 @@
 $('.prtlcordibtn').click(function(){
-    $('#prtldivsec').slideDown('slow');
+    $('#prtldivsec').show();
         var division = document.getElementById('p2');
         var divisionTop = division.offsetTop;
         division.scrollTo(0, divisionTop);
 });
 
 $('#clsprtlsign').click(function(){
-    $('#prtldivsec').slideUp('slow');
+    $('#prtldivsec').hide();
 });
 
 const items = document.querySelectorAll('.itempc');
@@ -26,3 +26,18 @@ closeButton.addEventListener('click', () => {
   const container = document.querySelector('#prtldivsec');
   container.style.display = 'none';
 });
+
+$(document).ready(function(){
+var applyBtn = document.getElementById('apply');
+applyBtn.addEventListener('click', function() {
+  document.getElementById("alllog").style.display='block';
+  document.getElementById("closeactn").style.display='block';
+  document.getElementById("alllog").innerHTML='<iframe src="/ap/fetchlogAll.html" ></iframe>';
+});
+});
+
+$('#closeactn').click(function(){
+  $('#alllog,#closeactn').hide();
+  $('#alllog').empty();
+});
+ 
