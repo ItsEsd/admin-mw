@@ -1,7 +1,7 @@
 // M A S T R O W A L L ////////////////////////////
 
 var r1= "https://script.google.com/macros/s/";
-var rsign ="AKfycbw_eFwIQBrL_iROgSRuNxGLf5SQByAqRE8_beLh9kXWWO2ZyLCltmZgTqSpoknVUIR1/exec"
+var rsign ="AKfycbyrwGmu2xLppdpLnGownMSbh1gsIiJxizzpUSnJs6TerlByKqt4i24NSC8t7nRf_i3Ejw/exec"
 document.getElementById("in").addEventListener("click", LogAdmin);
 function LogAdmin() {
   var mail = document.getElementById("em").value;
