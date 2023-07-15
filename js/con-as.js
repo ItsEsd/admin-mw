@@ -30,14 +30,14 @@ closeButton.addEventListener('click', () => {
 $(document).ready(function(){
 var applyBtn = document.getElementById('apply');
 applyBtn.addEventListener('click', function() {
-  document.getElementById("alllog").style.display='block';
-  document.getElementById("closeactn").style.display='block';
-  document.getElementById("alllog").innerHTML='<iframe src="/ap/fetchlogAll.html" ></iframe>';
+  document.getElementById("rffrlfrm").style.display='block';
+  document.getElementById("alllog").innerHTML='<iframe src="/ap/fetchlogAll.html" ></iframe><span id="closeactn">Close</span>';
+
+  $('#closeactn').click(function(){
+    $('#rffrlfrm').hide();
+    $('#alllog').empty();
+  });
 });
 });
 
-$('#closeactn').click(function(){
-  $('#alllog,#closeactn').hide();
-  $('#alllog').empty();
-});
  
