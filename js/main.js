@@ -46,7 +46,7 @@
     imageFadeDuration: 600,
     // maxWidth: 800,
     // maxHeight: 600,
-    positionFromTop: 50,
+    positionFromTop: 150,
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
@@ -195,7 +195,7 @@
 
     $window.on('resize', $.proxy(this.sizeOverlay, this));
 
-    $('select, object, embed').css({
+    $('object, embed').css({
       visibility: 'hidden'
     });
 
