@@ -369,6 +369,7 @@ a {
 	margin-bottom: 15px;
 }
 #p3 select option{
+  padding:10px 10px;
 background-color: #b9e204a2;
 }
 #p4 input,#p3 input,#p3 select {
