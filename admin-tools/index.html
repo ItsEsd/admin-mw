@@ -256,7 +256,7 @@
       <div align="center"><br>
         <form name="compForm"> <input type="hidden" name="myDoc"id="htmlviewtx">
           <div id="textBox" contenteditable="true">
-            <p>Start Editing..</p>
+            <p onclick=" document.getElementById('textBox').innerHTML='' ;" style="height:200px;">Start Editing..</p>
           </div>
           <div id="toolBar1"> <select style="font: 14px Arial, sans-serif;border:none;border-radius:4px;height:20px;" onchange="formatDoc('formatblock',this[this.selectedIndex].value);this.selectedIndex=0;">
               <option selected>- formatting -</option>
