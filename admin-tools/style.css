@@ -174,8 +174,19 @@ body {
     cursor: pointer;
   }
 
-  img.intLink {
-    border: 0;
+  .intLink {
+    cursor: pointer;
+  }
+
+  #toolBar2 button{
+    border: 0px;
+    width:28px;
+    height:27px;
+    background-color:#ffffff ;
+    margin-bottom:4px;
+  }
+  #toolBar2 i{
+    font-size: 14px;
   }
 
   #toolBar1 select {
