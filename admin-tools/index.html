@@ -390,7 +390,7 @@ function setDocMode(bToSource) {
   if (bToSource) {
     oContent = document.createTextNode(oDoc.innerHTML);
     oDoc.innerHTML = "";
-    var oPre = document.createElement("pre");
+    var oPre = document.createElement("p");
     oDoc.contentEditable = false;
     oPre.id = "sourceText";
     oPre.contentEditable = true;
@@ -404,6 +404,8 @@ function setDocMode(bToSource) {
       oContent.selectNodeContents(oDoc.firstChild);
       oDoc.innerHTML = oContent.toString();
       oDoc.style.height = "350";
+      oPre.style.width = "100%";
+      oPre.style.wordWrap = "break-word";
     }
     oDoc.contentEditable = true;
   }
