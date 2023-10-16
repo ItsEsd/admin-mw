@@ -181,9 +181,10 @@ body {
   #toolBar2 button{
     border: 0px;
     width:28px;
-    height:27px;
+    height:28px;
     background-color:#ffffff ;
     margin-bottom:4px;
+    padding:1px;
   }
   #toolBar2 i{
     font-size: 14px;
