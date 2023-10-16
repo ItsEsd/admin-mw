@@ -469,29 +469,29 @@ function getId(url) {
 }
 
 $('#rmvcls').click(function(){
-  var opnt =document.getElementById('textBox');
+  var opnt = document.getElementById('textBox');
   var classes = [];
-$('#textBox *:not(script)').each(function(){
-  _classes = $(this).attr('class') ? $(this).attr('class').split(' ') : []
-  _classes.forEach(function(entry){
-    if(classes.indexOf(entry) < 0){
-      classes.push(entry)
+  $('#textBox *:not(script)').removeAttr('style');
+  $('#textBox *:not(script)').each(function(){
+    _classes = $(this).attr('class') ? $(this).attr('class').split(' ') : [];
+    _classes.forEach(function(entry){
+      if(classes.indexOf(entry) < 0){
+        classes.push(entry);
+      }
+    });
+  });
+  var _classlist = classes.length;
+  for(var k = 0; k < _classlist; k++){
+    if(classes[k] !== ""){
+      var cls = '.' + classes[k];
+      console.log(cls);
+      $(cls).removeAttr('id');
+      $(cls).removeAttr('style');
+      $(cls).removeAttr('dir');
+      $(cls).removeAttr('class');
     }
-  })
-});
-console.log(classes);
-var _classlist = classes.length;
-for(var k = 0;k<_classlist;k++){
-  if(classes[k] !=""){
-    var cls ='.'+classes[k];
-  console.log(cls);
-  $(cls).removeAttr('id');
-  $(cls).removeAttr('style');
-  $(cls).removeAttr('dir');
-  $(cls).removeAttr('class');
   }
-}
-console.log('All classes removed');
+
 });
 
 document.getElementById("crVideo").addEventListener("input", embed_vid);
