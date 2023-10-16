@@ -251,7 +251,7 @@
   <body onload="initDoc();" align="center">
     <div class="containercl"><br><h3 style="text-align: right;color: #fffffff1;">Admin Tools<span><img src="../images/mwalllogo.png" style="width:50px;margin-left:10px;margin-top:-10px;"></span><hr style="border-color:#043d88b0;border-width:2px;"></h3></div>
     <div id="tooldivm">
-    <h4 style="float:left;color:#2242f8e8;">HTML & Text Editor</h4>
+    <h4 style="float:left;color:#2242f8e8;" id="htmtitl">HTML & Text Editor</h4>
     <div class="htmtexted"><br>
       <div align="center"><br>
         <form name="compForm"> <input type="hidden" name="myDoc"id="htmlviewtx">
@@ -507,7 +507,13 @@ function embed_vid() {
     return false;
   }
 }
-
+var url_string = window.location.href;
+    var url = new URL(url_string);
+    var q = url.searchParams.get("_source");
+    if(q =="other"){
+    $('#jsonF,#htmtitl').hide();$('.containercl').hide();
+    $('#textBox').css('height','350px');
+    }
 
     </script>
   </body>
