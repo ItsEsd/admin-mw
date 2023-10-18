@@ -56,7 +56,7 @@ $.fn.serializeObject = function() {
 
 $('form[id="mwall_inmedia#1"]').submit(function() {
         var TOD, k;
-        document.getElementById("inmedia1_json").value = escape(JSON.stringify($('form[id="mwall_inmedia#1"]').serializeObject()));
+        document.getElementById("inmedia1_json").value = encodeURIComponent(JSON.stringify($('form[id="mwall_inmedia#1"]').serializeObject()));
         document.getElementById("postn").disabled = false;
         k = unescape(document.getElementById("inmedia1_json").value);
         TOD = JSON.parse(k);
@@ -98,7 +98,7 @@ function medoneup(e) {
 
 $('form[id="mwall_inmedia#2"]').submit(function() {
     var TOD, k;
-    document.getElementById("inmedia2_json").value = escape(JSON.stringify($('form[id="mwall_inmedia#2"]').serializeObject()));
+    document.getElementById("inmedia2_json").value = encodeURIComponent(JSON.stringify($('form[id="mwall_inmedia#2"]').serializeObject()));
     document.getElementById("postn2").disabled = false;
     k = unescape(document.getElementById("inmedia2_json").value);
     TOD = JSON.parse(k);
@@ -249,7 +249,7 @@ document.getElementById("postv").disabled = false;
 
 $(function() {
     $('form[id="quote_edit"]').submit(function() {
-      document.getElementById("quotes_json").value = escape(JSON.stringify($('form[id="quote_edit"]').serializeObject()));
+      document.getElementById("quotes_json").value = encodeURIComponent(JSON.stringify($('form[id="quote_edit"]').serializeObject()));
       document.getElementById("quotes_json_unesc").value = JSON.stringify($('form[id="quote_edit"]').serializeObject());
       document.getElementById("prequote").disabled = false;
       document.getElementById("postq").disabled = false;
@@ -311,7 +311,7 @@ document.getElementById("postq").disabled = true;
 
 $(function() {
   $('form[id="exinfo_edit"]').submit(function() {
-    document.getElementById("exinfo_json").value = escape(JSON.stringify($('form[id="exinfo_edit"]').serializeObject()));
+    document.getElementById("exinfo_json").value = encodeURIComponent(JSON.stringify($('form[id="exinfo_edit"]').serializeObject()));
     document.getElementById("exinfo_json_unesc").value = JSON.stringify($('form[id="exinfo_edit"]').serializeObject());
     document.getElementById("preexinfo").disabled = false;
     document.getElementById("postexin").disabled = false;
