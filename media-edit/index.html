@@ -22,7 +22,7 @@
     <div align="center" class="container"><br>
       <div align="center" id="logAd">
         <div style="width:80%;max-width:400px;"><br><br>
-          <form target="hdnfrm"><img class="topImg" src="../images/mwalllogo.png"><br> <br><input type="email" id="em" class="form-control" placeholder="Email address" required /><input autocomplete="off" type="password" id="idop" class="form-control" placeholder="******" required /> <input autocomplete="off" type="submit" Value="Admin" id="in"></form>
+          <form onsubmit="event.preventDefault();"><img class="topImg" src="../images/mwalllogo.png"><br> <br><input type="email" id="em" class="form-control" placeholder="Email address" required /><input autocomplete="off" type="password" id="idop" class="form-control" placeholder="******" required /> <input autocomplete="off" type="submit" Value="Admin" id="in"></form>
         </div>
         <div id="loader1" class="spinner-border text-primary"></div>
       </div>
@@ -38,7 +38,7 @@
           </div>
           <div class="content">
             <hr style="border-color:#0c29cd;width:100%;max-width:600px;">
-            <form id="mwall_inmedia#1" target="hdnfrm">
+            <form id="mwall_inmedia#1" onsubmit="event.preventDefault();">
               <div align="center">
                 <div class="input_fields_wrap">
                   <div class="contentN1">
@@ -67,7 +67,7 @@
           </div>
           <div class="content">
             <hr style="border-color:#0c29cd;width:100%;max-width:600px;">
-            <form id="mwall_inmedia#2" target="hdnfrm">
+            <form id="mwall_inmedia#2" onsubmit="event.preventDefault();">
               <div align="center">
                 <div class="input_fields_wrap">
                   <div class="contentN1">
@@ -124,7 +124,7 @@
           </div>
           <div class="content">
             <hr style="border-color:#0c29cd;width:100%;max-width:600px;">
-            <form id="quote_edit" target="hdnfrm">
+            <form id="quote_edit" onsubmit="event.preventDefault();">
               <div align="center"><textarea autocomplete="off" type="text" id="quote1" name="dquoteWall" class="form-control" placeholder="MASTRO Quote" required ></textarea><textarea id="quote2" autocomplete="off" type="text" name="dquoteWall" class="form-control" placeholder="MASTRO Quote" required></textarea><textarea id="quote3" autocomplete="off" type="text" name="dquoteWall" class="form-control" placeholder="MASTRO Quote" required ></textarea><textarea id="quote4" autocomplete="off" type="text" name="dquoteWall" class="form-control" placeholder="MASTRO Quote" required ></textarea></div> <input autocomplete="off" type="submit" id="upQuote" value="Update" />
             </form><br><input autocomplete="off" type="button" id="prequote" value="Preview" disabled="disabled" style="background-color:blue;color:white;border:none;border-radius:4px;padding:4px 6px;" /><br> 
             <input id="quotes_json" style="display:none;" /> <input id="quotes_json_unesc" style="display:none;" />
@@ -143,7 +143,7 @@
           </div>
           <div class="content">
             <hr style="border-color:#0c29cd;width:100%;max-width:600px;">
-            <form id="exinfo_edit" target="hdnfrm">
+            <form id="exinfo_edit" onsubmit="event.preventDefault();">
               <div align="center"><textarea autocomplete="off" type="text" id="exinfoup" name="exminfo" class="form-control" placeholder="Exam Notifications" required ></textarea></div> 
               <input autocomplete="off" type="submit" id="upExInfo" value="Update" />
             </form><br>
@@ -165,7 +165,6 @@
         <p style="cursor:pointer;color:#0c29cd;"><span onclick="document.getElementById('textarea').style.display='block';">Textarea >></span><span><a target="_blank" href="../admin-tools/" style="color:#0c29cd;text-decoration:none;"> Admin Tools >></a></span></p>
         <hr style="border-color:#0c29cd;width:100%;max-width:600px;">
       </div>
-      <iframe name="hdnfrm" id="hdnfrm" style="display:none;"></iframe>
     <section>
       <div id="secdelad"><center>
         <div id="divsecdl">
