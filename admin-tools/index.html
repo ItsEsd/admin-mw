@@ -504,7 +504,7 @@ function embed_vid() {
   var myId = getId(link);
   if (link != '' && link != 'http://') {
     document.getElementById("previewvid").innerHTML = '<iframe width="100%" src="//www.youtube.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>';
-    formatDoc('insertHTML', '<div class="youvid" align="center"><div class="embed-responsive embed-responsive-16by9 " style="max-width:600px; padding-top:10px;"><iframe class="embed-responsive-item" src="//www.youtube.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe></div></div><br>');
+    formatDoc('insertHTML', '<div align="center"><div class="embed-responsive embed-responsive-16by9" style="max-width:600px; padding-top:10px;"><iframe class="embed-responsive-item" src="//www.youtube.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe></div></div><br>');
   } else {
     return false;
   }
