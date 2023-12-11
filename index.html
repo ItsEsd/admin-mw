@@ -102,25 +102,21 @@
                     <li class="icon fa fa-user"><span class="title">Admin</span>
                     <div class="container">
                       <div class="row">
-                        <div class="col-md-4">
-                          <div class="left-text">
-                            <h4 style="font-size:20px;">TeleMedia Edit</h4>
+                        <div class="col-md-3 admn-perp">
+                            <h4 style="font-size:18px;">Tele Media</h4>
                             <p class="newex-p1"><img src="img/media-edit.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="media-edit/">Continue</a>
                             </div>
-                          </div>
                         </div>
-                        <div class="col-md-4">
-                          <div class="left-text">
-                            <h4 style="font-size:20px;">Admin Tools</h4>
+                        <div class="col-md-3 admn-perp">
+                            <h4 style="font-size:18px;">Admin Tools</h4>
                             <p class="newex-p1"><img src="img/admin-tools.jpg"> </p>
                             <div class="primary-button">
                               <a target="_blank" href="admin-tools/">Continue</a>
                               </div>
-                          </div>
                         </div>
-                      <div class="col-md-4">
+                      <div class="col-md-5">
                         <button class="prtlcordibtn"><i class="fa fa-users"></i><br><hr> Portal Coordinator</button></div>
                        </div>
                       </div>
@@ -128,7 +124,7 @@
                <div id="prtldivsec">
                 <div class="containerpc">
                   <div class="itempc">
-                    Referrer
+                    Admin /Employee
                     <span class="buttonpc">▲</span>
                     <div class="contentpc activepc">
                       <form id="prtlcordiin" autocomplete="off">
@@ -142,7 +138,7 @@
                         </div>
                       </form><br>
                      <div class="actncontnr"> <a href="mailto:mail@mastrowall.com"><button id="contactDesk" class="actnbtn">Contact Desk</button></a>
-                      | <button id="apply" class="actnbtn" disabled>Apply</button></div>
+                      | <button id="apply" class="actnbtn">Apply</button></div>
                     </div>
                   </div>
                   <div class="itempc">
@@ -168,11 +164,10 @@
                     </div>
                 </div>
                 <div style="text-align: right;width:90%;padding:10px;color:blue;background-color: rgb(228, 228, 228);"><a target="_blank" href="//astro.mastrowall.in">Be a part of the fun!</a></div>
-                <button class="close-buttonpc">Close</button>
+                <button class="close-buttonpc"><< Back</button>
               </div></div>
             <!-- Div End -->
                     </li>
-                       
                   </div>  
                   <div class="page" id="p3">
                     <li class="icon fa fa-handshake-o"><span class="title">Career</span>
@@ -182,33 +177,42 @@
                             <form id="contact" action="" method="post">
                                <div class="col-md-12">
                                  <fieldset>
-                                   <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                                   <input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
                                  </fieldset>
                                </div>
                                <div class="col-md-12">
                                  <fieldset>
-                                   <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+                                   <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
                                  </fieldset>
                                </div>
                                <div class="col-md-12">
                                 <fieldset>
-                                  <select name="applyfor" type="text" class="form-control" id="applyf" required="">
+                                  <input name="phone" type="number" class="form-control" maxlength="12" id="phone" placeholder="Phone no." required>
+                                </fieldset>
+                              </div>
+                              <div class="col-md-12">
+                                <fieldset>
+                                  <input name="resume" type="url" class="form-control" id="resume" placeholder="Resume / CV [url]" required>
+                                </fieldset>
+                              </div>
+                               <div class="col-md-12">
+                                <fieldset>
+                                  <select name="applyfor" type="text" class="form-control" id="applyf" required>
                                     <option value="admin">Admin</option>
                                     <option value="coordinator">Coordinator</option>
                                     <option value="marketing-sales">Marketing & Sales</option>
                                     <option value="contentwriter" selected="selected">Content Writer</option>
-
                                   </select>
                                 </fieldset>
                               </div>
                                <div class="col-md-12">
                                  <fieldset>
-                                   <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
-                                 </fieldset>
+                                   <textarea name="message" rows="6" class="form-control" id="message" placeholder="Write brief about your interest and experience" required=""></textarea>
+                                   <p id="charCount">Characters remaining: 500</p></fieldset>
                                </div>
                                <div class="col-md-12">
                                  <fieldset>
-                                   <button type="submit" id="form-submit" class="btn" disabled>Send Message</button>
+                                   <button type="submit" id="form-submit" class="btn" disabled>Apply / Request call back</button>
                                  </fieldset>
                                </div>
                              </form>
@@ -229,7 +233,6 @@
                             <div class="project-item">
                               <a href="/img/no-con-img.png" data-lightbox="image-1"><img src="/img/no-con-img.png"></a>
                             </div>
-                            
                            </div>
                         </div>
                         </div>
@@ -241,25 +244,25 @@
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6">
-                           <form id="contact" action="" method="post">
+                           <form id="fxcontact" action="" method="post">
                               <div class="col-md-12">
                                 <fieldset>
-                                  <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                                  <input name="name" type="text" class="form-control" id="namefx" placeholder="Your Name" required="">
                                 </fieldset>
                               </div>
                               <div class="col-md-12">
                                 <fieldset>
-                                  <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+                                  <input name="email" type="email" class="form-control" id="emailfx" placeholder="Email" required="">
                                 </fieldset>
                               </div>
                               <div class="col-md-12">
                                 <fieldset>
-                                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
+                                  <input name="subject" type="text" class="form-control" id="subjectfx" placeholder="Subject" required="">
                                 </fieldset>
                               </div>
                               <div class="col-md-12">
                                 <fieldset>
-                                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                  <textarea name="message"  class="form-control" id="messagefx" placeholder="Message" required=""></textarea>
                                 </fieldset>
                               </div>
                               <div class="col-md-12">
@@ -304,5 +307,19 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/con-as.js"></script>
+
+        <script>
+          const maxLength = 500;
+          const textarea = document.getElementById('message');
+          const charCount = document.getElementById('charCount');
+          textarea.addEventListener('input', function () {
+            const currentLength = textarea.value.length;
+            const remainingChars = maxLength - currentLength;
+            charCount.textContent = `Characters remaining: ${remainingChars}`;
+            if (currentLength > maxLength) {
+              textarea.value = textarea.value.substring(0, maxLength);
+            }
+          });
+        </script>
     </body>
 </html>
