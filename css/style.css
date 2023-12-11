@@ -33,15 +33,15 @@
   }
   
   .close-buttonpc {
-    top: 20px;
-    right: 160px;
-    position: absolute;
     padding: 10px;
     background-color: #f1f1f1;
     cursor: pointer;
     z-index: 1000000;
-    border: 1px solid grey;
+    border:0px;
+    border-bottom: 1px solid grey;
     outline: none;
+    width:90%;
+    text-align: right;
   }
   .close-buttonpc:active,.close-buttonpc:focus,.close-buttonpc:hover{
     outline: none;
@@ -66,7 +66,7 @@ outline:none;
   height:100%;
   z-index:100000;
   display: none;
-  background: #a806df81;
+  background: #14141481;
 }
   #alllog{
     width:100%;
@@ -87,13 +87,40 @@ outline:none;
     font-weight:500;
     position: fixed;
     z-index:100000;
-    background-color: #ff6f6f;
+    background-color: #636363;
     cursor: pointer;
     color:white;
     text-align: center;
     margin:0 auto;
   }
   #closeactn:hover{
-    background: #fd4a4a;
+    background: #878787;
     color:white;
+  }
+
+  #p2 .primary-button a {
+    width:90%;
+    max-width: 180px;
+    text-align: center;
+  }
+  .admn-perp{
+    background-color:#0b1cda7e;
+    padding:10px;
+    width:100%;
+    min-width:250px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    margin:10px 10px;
+  }
+  
+  #p2 .row{
+    width:100%;
+    margin-left:10px;
+    text-align: center;
+  }
+  #contact{
+    padding-top:10px;
+    height:400px;
+    overflow-y: auto;
+    background-color: #7f7f7fb0;
   }
