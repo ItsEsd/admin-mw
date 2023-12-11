@@ -896,7 +896,7 @@ button:disabled{
 .newex-p1 img{
   width:100%;
   max-width:160px;
-  height:140px;
+  height:150px;
   padding:10px;
   background-color: rgba(253, 253, 253, 0.178);
 }
@@ -913,10 +913,10 @@ button:disabled{
   outline: none;
   color: #ffffff;
   margin-bottom:60px;
-  background-color: #ffffff7d;
+  background-color: #afafaf88;
 }
 .prtlcordibtn:focus,.prtlcordibtn:hover{
-  background-color: #afafaf88;
+  background-color: #ffffff88;
   outline: none;
 }
 
