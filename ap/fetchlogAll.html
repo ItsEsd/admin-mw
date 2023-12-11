@@ -1,38 +1,43 @@
   <!-- CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="/ap/custom-style.css">
+
 <!-- JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
+<link rel="stylesheet" href="/ap/custom-style.css">
   <div id="applyModal" class="formactn">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Apply for Referrer</h5>
+          <h5 class="modal-title" style="width:300px;">Working is fun with us!</h5><p style="font-size:14px;width:100%;padding-bottom:2px;text-align:right;"><span style="padding-bottom:2px;border-bottom: 1px solid black;cursor:not-allowed;">Current openings</span></p>
         </div>
         <div class="modal-body">
-          <form id="applicationForm">
+          <form id="applicationForm" autocomplete="off">
          
               <input type="text" id="timestamp" name="timestamp" class="form-control" style="display:none;">
-            <div class="form-group">
+              <div class="form-group">
+                <label for="empid">Employee ID:</label>
+                <input type="text" id="empid" name="empid" class="form-control" placeholder="ADMN##########" required>
+              </div>
+              <div class="form-group">
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" class="form-control" required>
+              <input type="text" id="name" name="name" class="form-control"  style="text-transform: capitalize;" placeholder="Full Name" required>
             </div>
             <div class="form-group">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" class="form-control" required>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Registered Email ID" required>
             </div>
             <div class="form-group">
               <label for="phone">Phone no:</label>
-              <input type="number" id="phone" name="phone" class="form-control" maxlength="12" required>
+              <input type="number" id="phone" name="phone" class="form-control" maxlength="12" placeholder="Registered Phone No." required>
             </div>
             <div class="form-group">
               <label for="photo">Photo:</label>
               <input type="file" id="photo" name="photo" class="form-control" required>
             </div>
+           <div class="empdomcl">
             <div class="form-group">
               <label for="address">Address:</label>
-              <input type="text" id="address" name="address" class="form-control" required>
+              <input type="text" id="address" name="address" class="form-control" placeholder="[permanent /domicile address]" required>
             </div>
             <div class="form-group">
               <label for="city">City:</label>
@@ -51,10 +56,15 @@
               <input type="text" id="country" name="country" class="form-control" required>
             </div>
             <div class="form-group">
-              <label for="resume">Resume:</label>
-              <input type="url" id="resume" name="resume" class="form-control">
+              <label for="photo">Proof of domicile:</label>
+              <input type="file" id="sspupload" name="ssp" class="form-control" required>
             </div>
-            <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Submit</button>
+            </div>
+            <div class="form-group">
+              <label for="resume">Resume:</label>
+              <input type="url" id="resume" name="resume" placeholder="[url]" class="form-control">
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Continue >></button>
           </form>
         </div>
       </div>
