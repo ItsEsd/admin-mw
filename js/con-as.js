@@ -35,7 +35,7 @@ applyBtn.addEventListener('click', function() {
 
   $('#closeactn').click(function(){
     $('#rffrlfrm').hide();
-    $('#alllog').empty();
+    $('#alllog').empty(); document.getElementById("alllog").innerHTML='<center style="margin-top:200px;">Loading...</center><span id="closeactn">Close</span>';
   });
 });
 });
