@@ -9,17 +9,17 @@ $("#clsprtlsign").click(function () {
   $("#prtldivsec").hide();
 });
 
-const items = document.querySelectorAll(".itempc");
+// const items = document.querySelectorAll(".itempc");
 
-items.forEach((item) => {
-  const button = item.querySelector(".buttonpc");
-  const content = item.querySelector(".contentpc");
-  let isActive = false;
-  button.addEventListener("click", () => {
-    content.classList.toggle("activepc");
-    button.textContent = content.classList.contains("activepc") ? "▲" : "▼";
-  });
-});
+// items.forEach((item) => {
+//   const button = item.querySelector(".buttonpc");
+//   const content = item.querySelector(".contentpc");
+//   let isActive = false;
+//   button.addEventListener("click", () => {
+//     content.classList.toggle("activepc");
+//     button.textContent = content.classList.contains("activepc") ? "▲" : "▼";
+//   });
+// });
 
 $(document).ready(function () {
   var applyBtn = document.getElementById("apply");
