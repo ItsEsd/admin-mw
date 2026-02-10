@@ -1,0 +1,168 @@
+:root {
+  --blue: rgba(33, 150, 243, 0.85);
+  --green: rgba(76, 175, 80, 0.85);
+  --orange: rgba(255, 152, 0, 0.85);
+  --purple: rgba(156, 39, 176, 0.85);
+  --dark: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  margin: 0;
+  background: #141414;
+  color: #1e293b;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header img {
+  height: 48px;
+  max-width: 100%;
+  filter: grayscale(0.6);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url("/img/hero-cover.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 13, 57, 0.45);
+}
+.hero h3 {
+  position: relative;
+  color: #dedede;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 1;
+}
+.hero h1 {
+  position: relative;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  z-index: 1;
+}
+.hero img {
+  position: relative;
+  color: #dedede;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 1;
+  width: 80px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* ---------- BUTTON GRID ---------- */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 16px;
+  height: auto;
+  scrollbar-width: thin;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px;
+}
+
+.blue {
+  background:
+    linear-gradient(var(--blue), var(--blue)),
+    url("/img/btn1.jpeg") center / cover no-repeat;
+}
+
+.green {
+  background:
+    linear-gradient(var(--green), var(--green)),
+    url("/img/btn1.jpeg") center / cover no-repeat;
+}
+
+.orange {
+  background:
+    linear-gradient(var(--orange), var(--orange)),
+    url("/img/btn3.jpeg") center / cover no-repeat;
+}
+
+.purple {
+  background:
+    linear-gradient(var(--purple), var(--purple)),
+    url("/img/btn4.jpeg") center / cover no-repeat;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  margin-top: 50px;
+  padding: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #64748b;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.25rem;
+  }
+  .hero h3 {
+    font-size: 1rem;
+  }
+}

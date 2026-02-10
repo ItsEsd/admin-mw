@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -28,7 +28,7 @@
       <div align="center" id="logAd">
         <div style="width: 80%; max-width: 400px">
           <br /><br />
-          <form onsubmit="event.preventDefault();">
+          <form id="tmadmnfrm">
             <img class="topImg" src="../images/mwalllogo.png" /><br />
             <br /><input
               type="email"
@@ -44,7 +44,12 @@
               placeholder="******"
               required
             />
-            <input autocomplete="off" type="submit" value="Admin" id="in" />
+            <input
+              autocomplete="off"
+              type="submit"
+              value="Admin Login"
+              id="in"
+            />
           </form>
         </div>
         <div id="loader1" class="spinner-border text-primary"></div>
@@ -63,7 +68,7 @@
           </div>
           <div class="content">
             <hr style="border-color: #0c29cd; width: 100%; max-width: 600px" />
-            <form id="mwall_inmedia#1" onsubmit="event.preventDefault();">
+            <form id="mwall_inmedia#1" onsubmit="event.preventDefault()">
               <div align="center">
                 <div class="input_fields_wrap">
                   <div class="contentN1">
@@ -154,7 +159,7 @@
           </div>
           <div class="content">
             <hr style="border-color: #0c29cd; width: 100%; max-width: 600px" />
-            <form id="mwall_inmedia#2" onsubmit="event.preventDefault();">
+            <form id="mwall_inmedia#2" onsubmit="event.preventDefault()">
               <div align="center">
                 <div class="input_fields_wrap">
                   <div class="contentN1">
@@ -355,7 +360,7 @@
           </div>
           <div class="content">
             <hr style="border-color: #0c29cd; width: 100%; max-width: 600px" />
-            <form id="quote_edit" onsubmit="event.preventDefault();">
+            <form id="quote_edit" onsubmit="event.preventDefault()">
               <div align="center">
                 <textarea
                   autocomplete="off"
@@ -459,7 +464,7 @@
           </div>
           <div class="content">
             <hr style="border-color: #0c29cd; width: 100%; max-width: 600px" />
-            <form id="exinfo_edit" onsubmit="event.preventDefault();">
+            <form id="exinfo_edit" onsubmit="event.preventDefault()">
               <div align="center">
                 <textarea
                   autocomplete="off"
@@ -534,7 +539,9 @@
           <div style="max-width: 600px">
             <span
               style="cursor: pointer; color: blue; float: right"
-              onclick="document.getElementById('textarea').style.display='none';"
+              onclick="
+                document.getElementById('textarea').style.display = 'none'
+              "
               >Close
               <span
                 style="
@@ -559,7 +566,9 @@
         </div>
         <p style="cursor: pointer; color: #0c29cd">
           <span
-            onclick="document.getElementById('textarea').style.display='block';"
+            onclick="
+              document.getElementById('textarea').style.display = 'block'
+            "
             >Textarea >></span
           ><span
             ><a
@@ -580,7 +589,7 @@
               <h3>Deleting...</h3>
               <hr />
               <button class="btn btn-danger" id="delcon">Confirm</button>
-              <button class="btn btn-dark" onclick="$('#secdelad').hide();">
+              <button class="btn btn-dark" onclick="$('#secdelad').hide()">
                 Close
               </button>
             </div>
@@ -609,7 +618,7 @@
           <img src="../images/mwalllogo.png" /><br /><button
             class="btneb"
             id="inmediaShow"
-            onclick="window.open('https://telemedia.mastrowall.com/','_blank')"
+            onclick="window.open('https://telemedia.mastrowall.com/', '_blank')"
             style="width: 200px"
           >
             Live
@@ -619,13 +628,23 @@
           <button
             class="btneb"
             id="update"
-            onclick="document.getElementById('upd').style.display='block';document.getElementById('id03').style.display='none';document.getElementById('update').style.display='none';document.getElementById('imifrmedit').style.display='block';"
+            onclick="
+              document.getElementById('upd').style.display = 'block';
+              document.getElementById('id03').style.display = 'none';
+              document.getElementById('update').style.display = 'none';
+              document.getElementById('imifrmedit').style.display = 'block';
+            "
           >
             Edit</button
           ><button
             class="btneb"
             id="imifrmedit"
-            onclick="document.getElementById('upd').style.display='none';document.getElementById('id03').style.display='block';document.getElementById('update').style.display='block';document.getElementById('imifrmedit').style.display='none';"
+            onclick="
+              document.getElementById('upd').style.display = 'none';
+              document.getElementById('id03').style.display = 'block';
+              document.getElementById('update').style.display = 'block';
+              document.getElementById('imifrmedit').style.display = 'none';
+            "
             style="display: none"
           >
             Back
@@ -718,7 +737,7 @@
           $(
             '<div class="slide-placeholder-animator" data-height="' +
               placeholderHeight +
-              '"></div>'
+              '"></div>',
           ).insertAfter(ui.placeholder);
         },
         change: function (event, ui) {
@@ -729,10 +748,10 @@
               {
                 height: ui.item.outerHeight() + 15,
               },
-              300
+              300,
             );
           placeholderAnimatorHeight = parseInt(
-            $(".slide-placeholder-animator").attr("data-height")
+            $(".slide-placeholder-animator").attr("data-height"),
           );
           $(".slide-placeholder-animator")
             .stop()
@@ -748,9 +767,9 @@
                 $(
                   '<div class="slide-placeholder-animator" data-height="' +
                     placeholderHeight +
-                    '"></div>'
+                    '"></div>',
                 ).insertAfter(ui.placeholder);
-              }
+              },
             );
         },
         stop: function (e, ui) {
@@ -760,7 +779,7 @@
     </script>
     <script>
       document.addEventListener("contextmenu", (event) =>
-        event.preventDefault()
+        event.preventDefault(),
       );
     </script>
   </body>

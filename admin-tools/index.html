@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -38,17 +38,38 @@
     />
     <script src="/admin-tools/script-formatter.js"></script>
   </head>
-  <body onload="initDoc();" align="center">
+  <body onload="initDoc()" align="center">
     <div class="containercl">
-      <br />
-      <h3 style="text-align: right; color: #fffffff1">
-        Admin Tools<span
-          ><img
-            src="../images/mwalllogo.png"
-            style="width: 50px; margin-left: 10px; margin-top: -10px"
-        /></span>
+      <div
+        style="
+          text-align: right;
+          color: #fffffff1;
+          padding-top: 20px;
+          padding-bottom: 0px;
+          position: relative;
+        "
+      >
+        <a style="left: 10px; position: absolute;cursor: pointer;" target="_self" href="/"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="30px"
+            fill="#c2c2c2"
+          >
+            <path
+              d="m287-446.67 240 240L480-160 160-480l320-320 47 46.67-240 240h513v66.66H287Z"
+            /></svg
+        ></a>
+        <span
+          ><h3 style="padding-right:10px;font-family: 'Courier New', Courier, monospace;font-weight:bold;letter-spacing:2px;">Admin Tools
+          <span
+            ><img
+              src="../images/mwalllogo.png"
+              style="width: 40px; margin-left: 10px; margin-top: -10px" /></span
+        ></span></h3>
         <hr style="border-color: #043d88b0; border-width: 2px" />
-      </h3>
+      </div>
     </div>
     <div id="tooldivm">
       <h4 style="float: left; color: #2242f8e8" id="htmtitl">
@@ -62,7 +83,7 @@
             <input type="hidden" name="myDoc" id="htmlviewtx" />
             <div id="textBox" contenteditable="true">
               <p
-                onclick=" document.getElementById('textBox').innerHTML='' ;"
+                onclick="document.getElementById('textBox').innerHTML = ''"
                 style="height: 200px"
               >
                 Start Editing..
@@ -71,12 +92,17 @@
             <div id="toolBar1">
               <select
                 style="
-                  font: 14px Arial, sans-serif;
+                  font:
+                    14px Arial,
+                    sans-serif;
                   border: none;
                   border-radius: 4px;
                   height: 20px;
                 "
-                onchange="formatDoc('formatblock',this[this.selectedIndex].value);this.selectedIndex=0;"
+                onchange="
+                  formatDoc('formatblock', this[this.selectedIndex].value);
+                  this.selectedIndex = 0;
+                "
               >
                 <option selected>- formatting -</option>
                 <option value="h1">Title 1 &lt;h1&gt;</option>
@@ -90,12 +116,17 @@
               </select>
               <select
                 style="
-                  font: 14px Arial, sans-serif;
+                  font:
+                    14px Arial,
+                    sans-serif;
                   border: none;
                   border-radius: 4px;
                   height: 20px;
                 "
-                onchange="formatDoc('fontname',this[this.selectedIndex].value);this.selectedIndex=0;"
+                onchange="
+                  formatDoc('fontname', this[this.selectedIndex].value);
+                  this.selectedIndex = 0;
+                "
               >
                 <option class="heading" selected>- font -</option>
                 <option>Arial</option>
@@ -105,12 +136,17 @@
               </select>
               <select
                 style="
-                  font: 14px Arial, sans-serif;
+                  font:
+                    14px Arial,
+                    sans-serif;
                   border: none;
                   border-radius: 4px;
                   height: 20px;
                 "
-                onchange="formatDoc('fontsize',this[this.selectedIndex].value);this.selectedIndex=0;"
+                onchange="
+                  formatDoc('fontsize', this[this.selectedIndex].value);
+                  this.selectedIndex = 0;
+                "
               >
                 <option class="heading" selected>- size -</option>
                 <option value="1">Very small</option>
@@ -123,12 +159,17 @@
               </select>
               <select
                 style="
-                  font: 14px Arial, sans-serif;
+                  font:
+                    14px Arial,
+                    sans-serif;
                   border: none;
                   border-radius: 4px;
                   height: 20px;
                 "
-                onchange="formatDoc('forecolor',this[this.selectedIndex].value);this.selectedIndex=0;"
+                onchange="
+                  formatDoc('forecolor', this[this.selectedIndex].value);
+                  this.selectedIndex = 0;
+                "
               >
                 <option class="heading" selected>- color -</option>
                 <option value="red">Red</option>
@@ -139,12 +180,17 @@
               </select>
               <select
                 style="
-                  font: 14px Arial, sans-serif;
+                  font:
+                    14px Arial,
+                    sans-serif;
                   border: none;
                   border-radius: 4px;
                   height: 20px;
                 "
-                onchange="formatDoc('backcolor',this[this.selectedIndex].value);this.selectedIndex=0;"
+                onchange="
+                  formatDoc('backcolor', this[this.selectedIndex].value);
+                  this.selectedIndex = 0;
+                "
               >
                 <option class="heading" selected>- background -</option>
                 <option value="red">Red</option>
@@ -158,84 +204,88 @@
               <button
                 type="button"
                 title="Clean"
-                onclick="if(validateMode()){oDoc.innerHTML=sDefTxt};"
+                onclick="
+                  if (validateMode()) {
+                    oDoc.innerHTML = sDefTxt;
+                  }
+                "
               >
                 <i class="fas fa-trash-alt intLink"></i>
               </button>
               <button type="button">
                 <i
                   title="Undo"
-                  onclick="formatDoc('undo');"
+                  onclick="formatDoc('undo')"
                   class="fas fa-undo intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Redo"
-                  onclick="formatDoc('redo');"
+                  onclick="formatDoc('redo')"
                   class="fas fa-redo intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Remove formatting"
-                  onclick="formatDoc('removeFormat');"
+                  onclick="formatDoc('removeFormat')"
                   class="fas fa-remove-format intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Bold"
-                  onclick="formatDoc('bold');"
+                  onclick="formatDoc('bold')"
                   class="fas fa-bold intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Italic"
-                  onclick="formatDoc('italic');"
+                  onclick="formatDoc('italic')"
                   class="fas fa-italic intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Underline"
-                  onclick="formatDoc('underline');"
+                  onclick="formatDoc('underline')"
                   class="fas fa-underline intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Left align"
-                  onclick="formatDoc('justifyleft');"
+                  onclick="formatDoc('justifyleft')"
                   class="fas fa-align-left intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Center align"
-                  onclick="formatDoc('justifycenter');"
+                  onclick="formatDoc('justifycenter')"
                   class="fas fa-align-center intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Right align"
-                  onclick="formatDoc('justifyright');"
+                  onclick="formatDoc('justifyright')"
                   class="fas fa-align-right intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Numbered list"
-                  onclick="formatDoc('insertorderedlist');"
+                  onclick="formatDoc('insertorderedlist')"
                   class="fas fa-list-ol intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Dotted list"
-                  onclick="formatDoc('insertunorderedlist');"
+                  onclick="formatDoc('insertunorderedlist')"
                   class="fas fa-list-ul intLink"
                 ></i>
               </button>
@@ -243,26 +293,26 @@
                 <i
                   title="Subscript"
                   class="fas fa-subscript intLink"
-                  onclick="formatDoc('subscript');"
+                  onclick="formatDoc('subscript')"
                 ></i></button
               ><button type="button">
                 <i
                   title="Superscript"
                   class="fas fa-superscript intLink"
-                  onclick="formatDoc('superscript');"
+                  onclick="formatDoc('superscript')"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Add indentation"
-                  onclick="formatDoc('indent');"
+                  onclick="formatDoc('indent')"
                   class="fas fa-indent intLink"
                 ></i>
               </button>
               <button type="button">
                 <i
                   title="Delete indentation"
-                  onclick="formatDoc('outdent');"
+                  onclick="formatDoc('outdent')"
                   class="fas fa-outdent intLink"
                 ></i>
               </button>
@@ -283,7 +333,7 @@
                 title="Add picture"
                 data-toggle="modal"
                 data-target="#crimg"
-                onclick="document.getElementById('btnOkImg').disabled='true';"
+                onclick="document.getElementById('btnOkImg').disabled = 'true'"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -336,7 +386,7 @@
                   type="checkbox"
                   name="switchMode"
                   id="switchBox"
-                  onchange="setDocMode(this.checked);"
+                  onchange="setDocMode(this.checked)"
                 />
                 <label for="switchBox" style="margin: 0px; cursor: pointer"
                   >Show HTML</label
